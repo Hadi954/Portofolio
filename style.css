@@ -399,16 +399,10 @@
             font-size: 14px;
         }
 
-        /* Reveal Animation */
+        /* Reveal Animation (Dimatikan) */
         .reveal {
-            opacity: 0;
-            transform: translateY(40px) scale(0.95);
-            transition: 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        .reveal.active {
             opacity: 1;
-            transform: translateY(0) scale(1);
+            transform: none;
         }
 
         @media (max-width: 768px) {
