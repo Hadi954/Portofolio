@@ -412,6 +412,19 @@
         }
 
         @media (max-width: 768px) {
+            /* Matikan efek berat di mobile biar gak ngelag */
+            .blob, .blob-2, .blob-3 {
+                display: none !important;
+                animation: none !important;
+            }
+            .bg-grid {
+                animation: none !important;
+            }
+            .card {
+                backdrop-filter: blur(5px);
+                -webkit-backdrop-filter: blur(5px);
+            }
+
             .nav-content {
                 flex-direction: column;
                 gap: 16px;
